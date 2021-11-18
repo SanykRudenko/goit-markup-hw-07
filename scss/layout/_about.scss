@@ -2,6 +2,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .third-title{
     max-width: 270px;
     font-weight: 700;
@@ -50,8 +51,8 @@
     margin-right: 30px;
     justify-content: center;
     transition: fill 250ms linear;
-}
 
-.about-icons:hover, .about-icons:focus{
-    fill: var(--accent-color);
+&:hover, &:focus{
+        fill: var(--accent-color);
+    }
 }

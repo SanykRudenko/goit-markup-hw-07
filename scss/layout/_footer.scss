@@ -1,9 +1,6 @@
 .footer-class{
     padding-top: 60px;
     padding-bottom: 60px;
-}
-
-.footer-class{
     background-color: #2F303A;
 }
 
@@ -29,10 +26,6 @@
     color: rgba(255, 255, 255, 0.6);  
 }
 
-.footer-header-site:hover, .footer-header-site:focus{
-    color: var(--accent-color);
-}
-
 .footer-item{
     margin-bottom: 9px;
 }
@@ -43,10 +36,10 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-header-tel:hover, .footer-header-tel:focus{
-    color: var(--accent-color);
+&:hover, &:focus{
+        color: var(--accent-color);
+    }
 }
 
 .footer-header-tel{
@@ -55,8 +48,11 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
+&:hover, &:focus{
+        color: var(--accent-color);
+    }
+}
 
 .footer-container{
     display: flex;
@@ -95,6 +91,11 @@
 .footer-social-icon{
     fill: var(--primary-title-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.footer-social-link:hover &,
+.footer-social-link:focus &{
+    fill: var(--primary-title-color);
+}
 }
 
 .footer-social-link{
@@ -106,15 +107,10 @@
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-social-link:hover, .footer-social-link:focus{
-    background-color: var(--accent-color);
-}
-
-.footer-social-link:hover .footer-social-icon,
-.footer-social-link:focus .footer-social-icon{
-    fill: var(--primary-title-color);
+&:hover, &:focus{
+        background-color: var(--accent-color);
+    }
 }
 
 
